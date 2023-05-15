@@ -1,9 +1,7 @@
 ---
 title: "My Document"
-output: html_document
+format: html
 ---
-
-# My Document
 
 ## Emphasis
 
@@ -22,10 +20,18 @@ Markdown supports ordered and unordered lists, which may be nested:
 
 This `code` is inline. The following is a code block with syntax highlighting:
 
-```js
-const print = (text) => console.log(text);
-print("Hello world");
+```{r }
+#| label: HelloR
+#| include: TRUE
+print("Hello world from R")
 ```
+```{python}
+#| label:  HelloPy
+#| include: TRUE
+print("Hello from python")
+
+```
+
 
 ## Links
 
